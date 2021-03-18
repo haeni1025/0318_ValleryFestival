@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    color: #222328;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+a:link {color: #222;}
+a:visited {color: #222;}
+a:hover {color: #333;}
+a:active {color: #333;}
+body {background-color: #fff;}
+ul {list-style: none;}
+/* Reset */
+
+/* 가이드라인 시작 */
+/*div#wrap {  border: 1px solid #000;  }*/
+/*header#header {  border: 1px solid #000;  }*/
+/*nav#gnb {  border: 1px solid #000;  }*/
+/*ul#mainMenu {  border: 1px solid #000;  }*/
+/*ul.subMenu {  border: 1px solid #000;  }*/
+
+
+/*div#rightArea {  border: 1px solid #000;  }*/
+/*div#slideshow {  border: 1px solid #000;  }*/
+/*div#contents {  border: 1px solid #000;  }  */
+/*#rightArea div#contents>div { border: 1px solid #000;}*/
+/*footer#footer {  border: 1px solid #000;  }*/
+/* 가이드라인 끝
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1000px;
+    margin: 10px;
+    margin-left: 8px;
+    display: flex;
+}
+/* div#wrap 끝 */
+
+
+/* header#header 시작 */
+header#header {
+    width: 200px;
+}
+#header>div#headerLogo {
+    text-align: center;
+    margin: 10px auto;
+}
+
+    /* nav#gnb 시작 */
+nav#gnb>ul#mainMenu {
+    width: 160px;
+    margin: 10px auto;
+    position: relative;
+}
+
+#gnb>#mainMenu>li {
+    border: 1px solid #000;
+}
+#gnb>#mainMenu>li:not(:first-child) {
+    border-top: none;
+}
+#gnb>#mainMenu>li>a {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+#gnb>#mainMenu li:hover {
+    background-color: rgba(173, 216, 255, 0.8);
+}
+#gnb>#mainMenu li:hover>a {
+    color: #f50;
+}
+
+        /* subMenu */
+#gnb .subMenu {
+    position: absolute;
+    background-color: #add8ff;
+    transform: translate(98%, -41%);
+    display: none;
+    z-index: 1;
+}
+#gnb #artist {
+    transform: translate(98%, -30%);
+}
+#gnb .subMenu>li {
+    border: 1px solid #bbb;
+}
+#gnb .subMenu>li:not(:first-child) {
+    border-top: none;
+}
+#gnb .subMenu>li>a {
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+#gnb .subMenu>li:hover>a {
+    background-color: #fff;
+}
+        /* subMenu */
+    /* nav#gnb 끝 */
+
+/* header#header 끝 */
+
+
+/* div#rightArea 시작 */
+div#rightArea {
+    width: 800px;
+}
+    /* div#slideshow 시작 */
+#rightArea div#slideshow {
+    width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+#rightArea #slideshow #slideShuttleFrame {
+    width: 2420px;
+    height: 350px;
+    position: absolute;
+}
+#rightArea #slideshow a {
+    float: left;
+    position: relative;
+}
+#rightArea #slideshow span {
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.82);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+    /* div#slideshow 끝 */
+
+
+    /* div#contents 시작 */
+#rightArea div#contents {
+    width: 800px;
+    height: 200px;
+    display: flex;
+}
+#rightArea div#contents>div {
+    height: 200px;
+    padding: 10px 4px;
+}
+#rightArea div#contents>div>button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    outline: none;
+
+    position: relative;
+    left: 20px;
+    top: 1px;
+}
+
+        /* div#bbsNotice 시작 */
+#contents div#bbsNotice {
+    width: 300px;
+}
+#contents #bbsNotice table {
+    font-size: 14px;
+    width: 290px;
+    border: 1px solid #ccc;
+}
+#contents #bbsNotice table td {
+    line-height: 44px;
+}
+        /* div#bbsNotice 끝 */
+
+
+        /* div#bbsGallery 시작 */
+#contents div#bbsGallery {
+    width: 300px;
+}
+#contents #galleryList {
+    width: 290px;
+    height: 142px;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid #ccc;
+}
+#contents #galleryList a:hover {
+    opacity: 0.8;
+}
+        /* div#bbsGallery 끝 */
+
+
+        /* div#shortcut 시작 */
+#contents div#shortcut {
+    width: 200px;
+    text-align: center;
+}
+#contents #shortcut>a {
+    width: 180px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+    top: 34px;
+}
+        /* div#shortcut 끝 */
+    /* div#contents 끝 */
+
+
+    /* footer#footer 시작 */
+#rightArea footer#footer {
+    width: 800px;
+    height: 100px;
+    display: flex;
+}
+#rightArea #footer>div {
+    height: 100px;
+}
+
+    /* div#footerLogo 시작 */
+#rightArea #footer #footerLogo {
+    width: 180px;
+    text-align: center;
+    padding-top: 34px;
+}
+    /* div#footerLogo 끝 */
+
+    /* div#copyright 시작 */
+#rightArea #footer #copyright {
+    font-size: 15px;
+    width: 420px;
+    padding: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+    /* div#copyright 끝 */
+
+    /* div#familySite 시작 */
+#rightArea #footer #familySite {
+    width: 200px;
+    text-align: center;
+    line-height: 100px;
+}
+#rightArea #footer #familySite select {
+    font-size: 17px;
+}
+    /* div#familySite 끝 */
+        /* footer#footer 끝 */
+
+/* div#rightArea 끝 */
+
+
+/* div#modalLayerBg 시작 */
+div#modalLayerBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: none;
+}
+#modalLayerBg>div#modalLayerPopup {
+    width: 570px;
+    height: 300px;
+
+    font-weight: bold;
+
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    position: absolute;
+    left: 560px;
+    top: 300px;
+
+    transform: translate(-50%, -50%);
+}
+
+#modalLayerBg h1,
+#modalLayerBg p {
+    margin-bottom: 20px;
+}
+#modalLayerBg ol {
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+#modalLayerBg ol>li {
+    line-height: 40px;
+}
+#modalLayerBg div#closeBtn {
+    text-align: right;
+    padding-right: 30px;
+}
+#modalLayerBg #closeBtn button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 14px;
+}
+/* div#modalLayerBg 끝 */
+
+/* IE, Chrome 동일 출력 시작 */
+header, nav, main, section,
+footer, address, article, aside {
+    display: block;
+}
+/* IE, Chrome 동일 출력 끝 */
+
+
+
+
+
